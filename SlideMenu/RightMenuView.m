@@ -45,8 +45,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    [self.delegate closeRightMenu:indexPath.row];
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if ([self.delegate respondsToSelector:@selector(closeRightMenu:)]) {
+        [self.delegate closeRightMenu:indexPath.row];
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    }
 }
 
 

@@ -1,5 +1,5 @@
 //
-//  MenuVC_3.m
+//  RightMenuVC_3.m
 //  SlideMenu
 //
 //  Created by KentarOu on 2015/03/07.
@@ -20,7 +20,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    
 }
 
 @end

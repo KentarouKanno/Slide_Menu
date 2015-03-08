@@ -1,5 +1,5 @@
 //
-//  MenuVC_1.h
+//  RightMenuVC_1.h
 //  SlideMenu
 //
 //  Created by KentarOu on 2015/03/07.

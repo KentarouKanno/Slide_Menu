@@ -13,6 +13,7 @@
 @interface FirstViewController ()
 {
     AppDelegate *appDelegate;
+    UIBarButtonItem *rightItem;
 }
 
 @end
@@ -28,15 +29,26 @@
     appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     appDelegate.nowViewController = menuView1;
     
+    rightItem = [[UIBarButtonItem alloc]initWithTitle:@"RightMenuVC_1" style:UIBarButtonItemStyleDone target:self action:@selector(pushMenuView:)];
+    self.navigationItem.rightBarButtonItem = rightItem;
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    // ナビゲーションボタンのタイトルを次の画面名に設定
+    rightItem.title = NSStringFromClass([appDelegate.nowViewController class]);
+}
+
+// 画面遷移
+- (void)pushMenuView:(id)sender {
+    [self.navigationController pushViewController:appDelegate.nowViewController animated:YES];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-   
-}
-
-- (IBAction)pushMenuView:(id)sender {
-    [self.navigationController pushViewController:appDelegate.nowViewController animated:YES];
+    
 }
 
 @end

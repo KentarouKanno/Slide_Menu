@@ -17,14 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // ナビタイトル
     self.navigationItem.title = @"NextViewController";
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-
 }
-
-
 
 @end

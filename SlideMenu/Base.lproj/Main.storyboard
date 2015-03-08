@@ -33,13 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.83041147989999997" green="0.91373858600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="FirstViewController" id="zeo-3q-3Bt">
-                        <barButtonItem key="rightBarButtonItem" title="MenuView" id="dBP-2G-FKL">
-                            <connections>
-                                <action selector="pushMenuView:" destination="BYZ-38-t0r" id="Agx-Qi-WCC"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="FirstViewController" id="zeo-3q-3Bt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
